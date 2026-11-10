@@ -1,0 +1,17 @@
+{
+  "name": "todo-3d",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm:dev -w @todo3d/api\" \"npm:dev -w @todo3d/web\"",
+    "build": "npm run build -w @todo3d/web",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "typescript": "^7.0.2"
+  }
+}

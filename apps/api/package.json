@@ -1,0 +1,20 @@
+{
+  "name": "@todo3d/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@todo3d/shared": "^0.1.0",
+    "hono": "^4.13.16"
+  }
+}
